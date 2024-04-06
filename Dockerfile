@@ -1,6 +1,6 @@
-ARG POSTGRES_VERSION=12.16
+ARG POSTGRES_VERSION=16.2
 FROM postgres:${POSTGRES_VERSION}-bullseye
-LABEL org.opencontainers.image.authors="rowe.andrew.d@gmail.com"
+# LABEL org.opencontainers.image.authors="rowe.andrew.d@gmail.com"
 
 RUN \
 apt-get update && \

@@ -16,8 +16,10 @@ PGPORT=${PGPORT:-5432}
 
 if [[ -n "${PGDB}" ]];
 then
+   echo ${PGDB:-postgres}
    POSTGRES_DB=${PGDB:-postgres}
 else 
+   echo ${POSTGRES_DB:-postgres}
    POSTGRES_DB=${POSTGRES_DB:-postgres}
 fi
 
